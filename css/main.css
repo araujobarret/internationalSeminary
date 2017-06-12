@@ -1,0 +1,33 @@
+body{
+    background-color: #efefef;
+}
+
+.sem-header{
+    background-color: #703a0f;
+    color: #fff;
+}
+
+.sem-table{
+    display: table;
+}
+
+.sem-header-col{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sem-header img{
+    max-height: 80px;
+    margin-left: 60px;
+}
+
+.container-links{
+    display: table;
+}
+
+.col{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #2e6da4;
+}
+
