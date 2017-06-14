@@ -83,18 +83,36 @@ sem-body {
 }
 
 .sem-event {
-    padding-top: 20px;
+    padding-top: 5%;
     padding-left: 8%;
     padding-right: 8%;
     line-height: 200%;
-    background-color: #ccc;
+    background-color: #fcf6d2;
     color: #703a0f;
 }
 
 .sem-event .sem-caption {
     font-weight: bold;
-    color: orange;
+    color: #e88a0c;
 }
 .sem-event .sem-text {
-    padding-top: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.sem-event .sem-event-item {
+    line-height: 150%;
+}
+
+.sem-event .sem-event-item strong {
+    color: #f68e00;
+}
+
+.sem-event .sem-event-item strong span, .sem-event .sem-event-item-right strong span {
+    font-size: 1.2em;
+}
+
+.sem-event .sem-event-item-right {
+    text-align: right;
+    line-height: 150%;
 }
