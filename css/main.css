@@ -12,10 +12,15 @@ sem-body {
     color: #fff;
     margin-bottom: 0px;
     border-radius: 0px;
+    border: none;
+    position: fixed;
+    top: 0;
+    width: inherit;
+    z-index: 9999;
 }
 
 .sem-header img{
-    max-height: 60px;
+    max-height: 70px;
     margin-left: 60px;
 }
 
@@ -35,8 +40,19 @@ sem-body {
 }
 
 .sem-menu-col a{
-    text-decoration: none;
+    font-weight: bold;
     color: #fff;
+    text-decoration: none;
+}
+
+.sem-menu-col:not(:first-child):hover{
+    color: #703a0f;
+    background-color: #f7ae42;
+    cursor: pointer;
+}
+
+.sem-menu-col:not(:first-child):hover a {
+    color: #703a0f;
 }
 
 .sem-social {
@@ -44,6 +60,18 @@ sem-body {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 0.8em;
+}
+
+.sem-social .contrast:hover {
+    cursor: pointer;
+}
+
+.sem-social .font-size:hover {
+    cursor: pointer;
+}
+
+.sem-social span span:first-of-type {
+    font-size: 1.4em;
 }
 
 .sem-social img{
@@ -57,8 +85,9 @@ sem-body {
 }
 
 .sem-banner {
+    border-top: solid 4px #f7ae42;
     background-color: #f7ae42;
-    padding-top: 4px;
+    /*padding-top: 4px;*/
     width: 100%;
 }
 
@@ -84,6 +113,7 @@ sem-body {
 
 .sem-event {
     padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 8%;
     padding-right: 8%;
     line-height: 200%;
@@ -94,6 +124,7 @@ sem-body {
 .sem-event .sem-caption {
     font-weight: bold;
     color: #e88a0c;
+    margin-bottom: 3%;
 }
 .sem-event .sem-text {
     padding-top: 2%;
@@ -115,4 +146,57 @@ sem-body {
 .sem-event .sem-event-item-right {
     text-align: right;
     line-height: 150%;
+}
+
+.sem-util{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 200%;
+    background-color: #703a0f;
+    color: #fcf6d2;
+}
+
+.sem-util h2{
+    margin-bottom: 3%;
+}
+
+.sem-util-map {
+    padding: 0;
+}
+
+.sem-util-map iframe {
+    margin-bottom: 3%;
+    width: 40%;
+    height: 400px;
+}
+
+.sem-footer {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    line-height: 200%;
+    background-color: #ddcea3;
+    color: #703a0f;
+    word-wrap: break-word;
+}
+
+.sem-footer a {
+    color: #703a0f;
+}
+
+.sem-footer .sem-logo{
+    margin-top: auto;
+}
+
+.sem-logo img {
+    width: 100%;
+}
+
+.sem-credits {
+    text-align: center;
+    background-color: #703a0f;
+    color: #fcf6d2;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }

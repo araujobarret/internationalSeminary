@@ -6,6 +6,7 @@
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,21 +16,21 @@
 <div class="container-fluid">
 	<div class="row sem-body">
 		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-			<nav class="row row-eq-height sem-header navbar">
+			<nav class="row row-eq-height sem-header navbar" id="home">
 				<div class="col-md-2 col-sm-2 col-xs-2 sem-menu-col hidden-xs hidden-sm">
 					<img src="img/logo.png" alt="Seminário Internacional Cultura Ciência Democracia" />
 				</div>
 				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#">Início</a>
+					<a href="#home">Início</a>
 				</div>
 				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#">Sobre</a>
+					<a href="#about">Sobre</a>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-4 sem-menu-col">
-					<a href="#">Informações úteis</a>
+					<a href="#util">Informações úteis</a>
 				</div>
 				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#">Contato</a>
+					<a href="#footer">Contato</a>
 				</div>
 				<div class="col-md-2 sem-social hidden-xs hidden-sm">
 					<img src="img/facebook.png" alt="Facebook">
@@ -38,16 +39,16 @@
 					<img src="img/youtube.png" alt="Youtube">
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-3 sem-social">
-					<img src="img/contrast.png" alt="" class="acessibility">&nbsp;&nbsp;Alto contraste&nbsp;&nbsp;
-					<span>A</span><span>A</span>&nbsp;&nbsp;Tamanho da Fonte
+					<span class="contrast"><img src="img/contrast.png" alt="" class="acessibility">&nbsp;&nbsp;Alto contraste&nbsp;&nbsp;</span>
+					<span class="font-size"><span>A</span>&nbsp;<span>A</span>&nbsp;&nbsp;Tamanho da Fonte</span>
 				</div>
 			</nav>
 
-			<div class="row">
-				<img class="sem-banner" src="img/banner.png" alt="">
+			<div class="row" id="row-banner">
+				<img class="sem-banner" src="img/logo.jpg" alt="">
 			</div>
 
-			<div class="row sem-about">
+			<div class="row sem-about" id="about">
 				<h2 class="sem-caption">Sobre</h2>
 				<p class="sem-text">Num momento internacional de grandes incertezas sobre os valores proclamados pela Revolução Francesa,
 					duramente defendidos e profundamente redefinidos ao longo dos últimos dois séculos, e muitas vezes
@@ -69,6 +70,209 @@
 					<p>
 						<strong><h3>9/8</h3></strong>
 						<strong>Eixo temático: Cultura, deslocamentos, identidades.</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>9:00</span><br>
+							Cerimônia de abertura<br>
+							Marta de Senna<br>
+						</strong>
+						Fundação Casa de Rui Barbosa - FCRB
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>9:30</span><br>
+							Palestra de abertura Lucia Helena<br>
+						</strong>
+						Universidade Federal Fluminense - UFF<br>
+						<em>Coetzee, a forma, o ficto, a versão, deslocamentos da subjetividade.</em>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>10:00</span><br>
+							MESA 1: O Brasil e os sujeitos deslocados.<br>
+						</strong>
+						Coordenadora: Maria Alice Rezende de Carvalho (Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ).
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:05</span><br>
+							Chiara Vangelista
+						</strong>
+						(Università degli Studi di Genova) – Políticas tribais, políticas imperiais.
+						Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:25</span><br>
+							Ivana Stolze Lima
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – Formas de registro e conhecimento de línguas africanas no Brasil.
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:45</span><br>
+							Christiane Laidler
+						</strong>
+						(Universidade do Estado do Rio de Janeiro - UERJ) – <em>"Reclamação": liberdade religiosa, direitos e
+						imigração em Rui Barbosa.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:05</span><br>
+							Charles Gomes
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – <em>O Brasil diante de uma suposta crise migratória internacional.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:25</span><br>
+							Maria Alice Rezende de Carvalho
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:45</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>12:30-13:45</span><br>
+							Intervalo para almoço.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>14:00</span><br>
+							MESA 2: Identidades em questão.
+						</strong>
+						Coordenador: Hélio Guimarães (Universidade de São Paulo - USP).
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:05</span><br>
+							André Botelho
+						</strong>
+						(Universidade Federal do Rio de Janeiro - UFRJ) – <em>Mario de Andrade e o modernismo como movimento cultural.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:25</span><br>
+							Marcos Veneu
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – <em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:45</span><br>
+							Pedro Meira Monteiro
+						</strong>
+						(Princeton University) – <em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>15:05</span><br>
+							Hélio Guimarães - comentário.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>15:20</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:00-16:15</span><br>
+							Intervalo para café
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>16:15</span><br>
+							MESA 3: Deslocamentos e identidades nos acervos.
+						</strong>
+						Coordenador: José Almino (Fundação Casa de Rui Barbosa - FCRB)
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:20</span><br>
+							Aquiles Brayner
+						</strong>
+						(British Library) - <em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:40</span><br>
+							Regina Abreu
+						</strong>
+						(Universidade Federal do Estado do Rio de Janeiro - UNIRIO) –
+						<em>Entre o ser e o estar: patrimonializando o imaterial e reclassificando as identidades.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:00</span><br>
+							Ana Maria de Almeida Camargo
+						</strong>
+						(Universidade de São Paulo - USP) –
+						<em>Políticas de constituição de acervos: os arquivos pessoais no espaço público.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:20</span><br>
+							José Almino - comentário.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:35</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>18:15-18:30</span><br>
+							Intervalo para café.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>18:30</span><br>
+							Conferência magna - Jacques Leenhardt
+						</strong>
+						(École des Hautes Études en Sciences Sociales)  – <em>“O deslocamento como base do conhecimento democrático”.</em>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<p>
+						<strong><h3>10/8</h3></strong>
+						<strong>Eixo temático: Ideias em circulação.</strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
@@ -270,16 +474,243 @@
 				</div>
 				<div class="col-md-4">
 					<p>
-						<strong><h3>10/8</h3></strong>
-						<strong>Eixo temático: Ideias em circulação.</strong>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<p>
 						<strong><h3>11/8</h3></strong>
 						<strong>Eixo temático: Gestão e democracia</strong>
 					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>9:00</span><br>
+							Cerimônia de abertura
+							Marta de Senna
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB)
+						[Tempo reservado para eventual fala do Ministro ou seu representante]
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>9:30</span><br>
+							Palestra de abertura Lucia Helena
+						</strong>
+						(Universidade Federal Fluminense - UFF) – <em>Coetzee, a forma, o ficto, a versão, deslocamentos da subjetividade.</em>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>10:00</span><br>
+							MESA 1: O Brasil e os sujeitos deslocados.
+						</strong>
+						Coordenadora: Maria Alice Rezende de Carvalho (Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ).
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:05</span><br>
+							Chiara Vangelista
+						</strong>
+						(Università degli Studi di Genova) – Políticas tribais, políticas imperiais.
+						Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:25</span><br>
+							Ivana Stolze Lima
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – Formas de registro e conhecimento de línguas africanas no Brasil.
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>10:45</span><br>
+							Christiane Laidler
+						</strong>
+						(Universidade do Estado do Rio de Janeiro - UERJ) – <em>"Reclamação": liberdade religiosa, direitos e
+						imigração em Rui Barbosa.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:05</span><br>
+							Charles Gomes
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – <em>O Brasil diante de uma suposta crise migratória internacional.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:25</span><br>
+							Maria Alice Rezende de Carvalho
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>11:45</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>12:30-13:45</span><br>
+							Intervalo para almoço.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>14:00</span><br>
+							MESA 2: Identidades em questão.
+						</strong>
+						Coordenador: Hélio Guimarães (Universidade de São Paulo - USP).
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:05</span><br>
+							André Botelho
+						</strong>
+						(Universidade Federal do Rio de Janeiro - UFRJ) – <em>Mario de Andrade e o modernismo como movimento cultural.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:25</span><br>
+							Marcos Veneu
+						</strong>
+						(Fundação Casa de Rui Barbosa - FCRB) – <em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>14:45</span><br>
+							Pedro Meira Monteiro
+						</strong>
+						(Princeton University) – <em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>15:05</span><br>
+							Hélio Guimarães - comentário.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>15:20</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:00-16:15</span><br>
+							Intervalo para café
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>16:15</span><br>
+							MESA 3: Deslocamentos e identidades nos acervos.
+						</strong>
+						Coordenador: José Almino (Fundação Casa de Rui Barbosa - FCRB)
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:20</span><br>
+							Aquiles Brayner
+						</strong>
+						(British Library) - <em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>16:40</span><br>
+							Regina Abreu
+						</strong>
+						(Universidade Federal do Estado do Rio de Janeiro - UNIRIO) –
+						<em>Entre o ser e o estar: patrimonializando o imaterial e reclassificando as identidades.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:00</span><br>
+							Ana Maria de Almeida Camargo
+						</strong>
+						(Universidade de São Paulo - USP) –
+						<em>Políticas de constituição de acervos: os arquivos pessoais no espaço público.</em>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:20</span><br>
+							José Almino - comentário.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:35</span><br>
+							Debate aberto ao público.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>18:15-18:30</span><br>
+							Intervalo para café.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>18:30</span><br>
+							Conferência magna - Jacques Leenhardt
+						</strong>
+						(École des Hautes Études en Sciences Sociales)  – <em>“O deslocamento como base do conhecimento democrático”.</em>
+					</p>
 				</div>
+			</div>
+
+			<div class="row sem-util">
+				<div class="col-md-12 col-sm-12 col-xs-12" id="util">
+					<h2 class="sem-caption"><strong>Informações úteis</strong></h2>
+					<p class="sem-text">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+						Lorem ipsum dolor
+					</p>
+				</div>
+			</div>
+			<div class="row sem-util sem-util-map">
+				<div class="col-md-12 text-center">
+					<iframe src="https://www.google.com/maps/d/embed?mid=16_yFBK_GwB0FTsAwuoCU7B_tc64"></iframe>
+				</div>
+			</div>
+			<div class="row sem-footer" id="footer">
+				<div class="col-md-2 col-md-offset-1 col-sm-11 col-sm-offset-1">
+					<strong>
+					R. São Clemente, 134 - Botafogo <br>
+					Rio de Janeiro - RJ, 22260-000 <br>
+					<a href="http://www.casaruibarbosa.gov.br">www.casaruibarbosa.gov.br</a><br>
+					endereço@email.com <br>
+					(21) 2389-4600
+					</strong>
+				</div>
+				<div class="col-md-3 col-md-offset-1 sem-logo">
+					<img src="img/logo_fcrb.png" alt="Fundação Casa de Rui Barbosa">
+				</div>
+				<div class="col-md-3 sem-logo">
+					<img src="img/logo_minc.png" alt="Ministério da Cultura">
+				</div>
+			</div>
+			<div class="row sem-credits">
+				<span>Seminário Internacional Cultura, Ciência e Democracia | &copy; Todos os direitos reservados | design: Celeste Matos | desenvolvimento: Carlos A. A. Barreto</span>
 			</div>
 		</div>
 	</div>
