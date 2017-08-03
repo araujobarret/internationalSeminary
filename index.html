@@ -16,60 +16,82 @@
 <div class="container-fluid">
 	<div class="row sem-body">
 		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-			<nav class="row row-eq-height sem-header navbar" id="home">
+			<nav class="row row-eq-height sem-header navbar" id="menu">
 				<div class="col-md-2 col-sm-2 col-xs-2 sem-menu-col hidden-xs hidden-sm">
-					<img src="img/logo.png" alt="Seminário Internacional Cultura Ciência Democracia" />
+					<img id="logo_mini" src="img/logo_mini.png" alt="Seminário Internacional Cultura Ciência Democracia" />
 				</div>
-				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#home">Início</a>
-				</div>
-				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#about">Sobre</a>
-				</div>
-				<div class="col-md-2 col-sm-4 col-xs-4 sem-menu-col">
-					<a href="#util">Informações úteis</a>
-				</div>
-				<div class="col-md-1 col-sm-2 col-xs-2 sem-menu-col">
-					<a href="#footer">Contato</a>
-				</div>
+
+				<a href="#row-banner" class="col-md-1 col-sm-2 col-xs-2 sem-menu-col" id="link-inicio">Início</a>
+				<a href="#about" class="col-md-1 col-sm-2 col-xs-2 sem-menu-col" id="link-sobre">Sobre</a>
+				<a href="#util" class="col-md-2 col-sm-4 col-xs-4 sem-menu-col" id="link-uteis">Informações úteis</a>
+				<a href="#footer" class="col-md-1 col-sm-2 col-xs-2 sem-menu-col" id="contato">Contato</a>
+
 				<div class="col-md-2 sem-social hidden-xs hidden-sm">
-					<img src="img/facebook.png" alt="Facebook">
-					<img src="img/twitter.png" alt="Twitter">
-					<img src="img/instagram.png" alt="Instagram">
-					<img src="img/youtube.png" alt="Youtube">
+					<a href="https://www.facebook.com/casaderuibarbosa/" target="_blank">
+						<img src="img/facebook.png" id="facebook" alt="Facebook">
+					</a>
+					<a href="https://twitter.com/casaruibarbosa" target="_blank">
+						<img src="img/twitter.png" id="twitter" alt="Twitter">
+					</a>
+					<a href="https://www.instagram.com/casaruibarbosa/" target="_blank">
+						<img src="img/instagram.png" id="instagram" alt="Instagram">
+					</a>
+					<a href="https://www.youtube.com/user/canalfcrb" target="_blank">
+						<img src="img/youtube.png" id="youtube" alt="Youtube">
+					</a>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3 sem-social">
-					<span class="contrast"><img src="img/contrast.png" alt="" class="acessibility">&nbsp;&nbsp;Alto contraste&nbsp;&nbsp;</span>
-					<span class="font-size"><span>A</span>&nbsp;<span>A</span>&nbsp;&nbsp;Tamanho da Fonte</span>
+
+				<div class="col-md-2 sem-access hidden-xs hidden-sm">
+					<span class="contrast" id="contrast"><img src="img/contrast.png" alt="Alto Contraste" class="acessibility">&nbsp;&nbsp;Alto contraste</span>
+				</div>
+				<div class="col-md-2 sem-access sem-font hidden-xs hidden-sm">
+					<span class="font-size"><span id="fontUp">A</span>&nbsp;<span id="fontDown">A</span>&nbsp;&nbsp;Tamanho da Fonte</span>
+				</div>
+				<div class="col-md-1 sem-idioma hidden-xs hidden-sm">
+					<img src="img/pt_icon.png" id="pt" alt="Idioma Português">
+					<img src="img/en_icon.png" id="en" alt="Idioma English">
 				</div>
 			</nav>
 
 			<div class="row" id="row-banner">
-				<img class="sem-banner" src="img/logo.jpg" alt="">
+				<img class="sem-banner" src="img/logo.jpg" id="logo" alt="">
 			</div>
 
 			<div class="row sem-about" id="about">
-				<h2 class="sem-caption">Sobre</h2>
-				<p class="sem-text">Num momento internacional de grandes incertezas sobre os valores proclamados pela Revolução Francesa,
-					duramente defendidos e profundamente redefinidos ao longo dos últimos dois séculos, e muitas vezes
-					lido hoje como de choque entre civilizações, a Casa de Rui Barbosa propõe uma reflexão sobre as relações
-					entre produção do conhecimento, contextos culturais e a democracia como valor.
+				<h2 class="sem-caption">Sobre o evento</h2>
+				<p class="sem-text">
+					<span>
+						Num momento internacional de grandes incertezas sobre os valores proclamados pelo Iluminismo,
+						duramente defendidos e profundamente redefinidos ao longo dos últimos dois séculos, momento lido hoje
+						como de choque entre civilizações, a Casa de Rui Barbosa propõe uma reflexão sobre as relações entre produção
+						do conhecimento, contextos culturais e a democracia como valor.
+					</span>
+					<br><br>
+					<em>* Serão conferidos certificados a quem comparecer à quatro das seis sessões de mesas-redondas.</em>
 				</p>
+
 			</div>
 
 			<div class="row sem-event">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<h2 class="sem-caption">Programação</h2>
-					<p class="sem-text">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor
+					<p class="sem-text" id="programacao-texto">
+						A partir dos conceitos de cultura, ciência e democracia, o programa do Seminário está estruturado em
+						três eixos temáticos.  O primeiro se denomina “Cultura, deslocamentos, identidades” e reúne pesquisas sobre
+						sujeitos deslocados de seu lugar – tanto espacial quanto social e moral – incluindo questões de alteridade,
+						identidade e resistência, a partir de discursos, práticas e construção da memória. O segundo trata das “Ideias
+						em circulação”, com apresentações sobre o livro, a imprensa e outras mídias, e a recepção, apropriação, transformação
+						e consagração das ideias. Por fim, há o eixo “Gestão e democracia”, que se volta para políticas culturais,
+						administração pública, gestão de instituições culturais, preservação e informação.
+						<br><br>
+						<!--<a href="" target="_blank"><em>Acesse aqui o livro eletrônico com os resumos das comunicações.</em></a>-->
+
 					</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 sem-event-text">
 					<p>
 						<strong><h3>9/8</h3></strong>
-						<strong>Eixo temático: Cultura, deslocamentos, identidades.</strong>
+						<strong><span class="day1">Eixo temático: Cultura, deslocamentos, identidades.</span></strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
@@ -84,7 +106,8 @@
 					<p class="sem-event-item">
 						<strong>
 							<span>9:30</span><br>
-							Palestra de abertura Lucia Helena<br>
+							Palestra de abertura <br>
+							Lucia Helena<br>
 						</strong>
 						Universidade Federal Fluminense - UFF<br>
 						<em>Coetzee, a forma, o ficto, a versão, deslocamentos da subjetividade.</em>
@@ -93,43 +116,46 @@
 					<p class="sem-event-item">
 						<strong>
 							<span>10:00</span><br>
-							MESA 1: O Brasil e os sujeitos deslocados.<br>
+							Mesa 1: O Brasil e os sujeitos deslocados.<br>
+							Coordenadora: Maria Alice Rezende de Carvalho <br>
 						</strong>
-						Coordenadora: Maria Alice Rezende de Carvalho (Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ).
+						Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>10:05</span><br>
-							Chiara Vangelista
+							Chiara Vangelista<br>
 						</strong>
-						(Università degli Studi di Genova) – Políticas tribais, políticas imperiais.
-						Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.
+						Università degli Studi di Genova<br>
+						<em>Políticas tribais, políticas imperiais. Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>10:25</span><br>
-							Ivana Stolze Lima
+							Ivana Stolze <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – Formas de registro e conhecimento de línguas africanas no Brasil.
+						Fundação Casa de Rui Barbosa - FCRB<br>
+						<em>Formas de registro e conhecimento de línguas africanas no Brasil.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>10:45</span><br>
-							Christiane Laidler
+							Christiane Laidler <br>
 						</strong>
-						(Universidade do Estado do Rio de Janeiro - UERJ) – <em>"Reclamação": liberdade religiosa, direitos e
-						imigração em Rui Barbosa.</em>
+						Universidade do Estado do Rio de Janeiro - UERJ <br>
+						<em>"Reclamação": liberdade religiosa, direitos e imigração em Rui Barbosa.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>11:05</span><br>
-							Charles Gomes
+							Charles Gomes <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>O Brasil diante de uma suposta crise migratória internacional.</em>
+						Fundação Casa de Rui Barbosa - FCRB <br>
+						<em>O Brasil diante de uma suposta crise migratória internacional.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
@@ -137,6 +163,7 @@
 							<span>11:25</span><br>
 							Maria Alice Rezende de Carvalho
 						</strong>
+						- comentário
 					</p>
 					<br>
 					<p class="sem-event-item-right">
@@ -146,7 +173,7 @@
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
 							<span>12:30-13:45</span><br>
 							Intervalo para almoço.
@@ -156,33 +183,37 @@
 					<p class="sem-event-item">
 						<strong>
 							<span>14:00</span><br>
-							MESA 2: Identidades em questão.
+							Mesa 2 - Identidades em questão. <br>
+							Coordenador: Hélio Guimarães <br>
 						</strong>
-						Coordenador: Hélio Guimarães (Universidade de São Paulo - USP).
+						Universidade de São Paulo - USP.
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:05</span><br>
-							André Botelho
+							André Botelho <br>
 						</strong>
-						(Universidade Federal do Rio de Janeiro - UFRJ) – <em>Mario de Andrade e o modernismo como movimento cultural.</em>
+						Universidade Federal do Rio de Janeiro - UFRJ <br>
+						<em>Mario de Andrade e o modernismo como movimento cultural.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:25</span><br>
-							Marcos Veneu
+							Marcos Veneu <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
+						Fundação Casa de Rui Barbosa - FCRB <br>
+						<em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:45</span><br>
-							Pedro Meira Monteiro
+							Pedro Meira Monteiro <br>
 						</strong>
-						(Princeton University) – <em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
+						Princeton University <br>
+						<em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
@@ -199,157 +230,158 @@
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
-							<span>16:00-16:15</span><br>
+							<span>16:00-16:30</span><br>
 							Intervalo para café
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
-							<span>16:15</span><br>
-							MESA 3: Deslocamentos e identidades nos acervos.
+							<span>16:30</span><br>
+							Mesa 3: Deslocamentos e identidades nos acervos. <br>
+							Coordenador: José Almino <br>
 						</strong>
-						Coordenador: José Almino (Fundação Casa de Rui Barbosa - FCRB)
+						Fundação Casa de Rui Barbosa - FCRB
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:20</span><br>
-							Aquiles Brayner
+							<span>16:35</span><br>
+							Aquiles Brayner <br>
 						</strong>
-						(British Library) - <em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
+						British Library <br>
+						<em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:40</span><br>
-							Regina Abreu
+							<span>16:55</span><br>
+							Regina Abreu <br>
 						</strong>
-						(Universidade Federal do Estado do Rio de Janeiro - UNIRIO) –
+						Universidade Federal do Estado do Rio de Janeiro - UNIRIO <br>
 						<em>Entre o ser e o estar: patrimonializando o imaterial e reclassificando as identidades.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>17:00</span><br>
-							Ana Maria de Almeida Camargo
+							<span>17:15</span><br>
+							Ana Maria de Almeida Camargo <br>
 						</strong>
-						(Universidade de São Paulo - USP) –
+						Universidade de São Paulo - USP <br>
 						<em>Políticas de constituição de acervos: os arquivos pessoais no espaço público.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>17:20</span><br>
+							<span>17:35</span><br>
 							José Almino - comentário.
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>17:35</span><br>
+							<span>17:50</span><br>
 							Debate aberto ao público.
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>18:15-18:30</span><br>
-							Intervalo para café.
-						</strong>
-					</p>
-					<br>
-					<p class="sem-event-item">
-						<strong>
 							<span>18:30</span><br>
-							Conferência magna - Jacques Leenhardt
+							Conferência de abertura <br>
+							Jacques Leenhardt <br>
 						</strong>
-						(École des Hautes Études en Sciences Sociales)  – <em>“O deslocamento como base do conhecimento democrático”.</em>
+						École des Hautes Études en Sciences Sociales <br>
+						<em>O deslocamento como base do conhecimento democrático.</em>
 					</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 sem-event-text">
 					<p>
 						<strong><h3>10/8</h3></strong>
-						<strong>Eixo temático: Ideias em circulação.</strong>
-					</p>
-					<br>
-					<p class="sem-event-item">
-						<strong>
-							<span>9:00</span><br>
-							Cerimônia de abertura
-							Marta de Senna
-						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB)
-						[Tempo reservado para eventual fala do Ministro ou seu representante]
+						<strong class="sem-event-text-caption"><span class="day2">Eixo temático: Ideias em circulação.</span></strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
 							<span>9:30</span><br>
-							Palestra de abertura Lucia Helena
+							Avisos/Informes. <br>
+							Antônio Herculano<br>
 						</strong>
-						(Universidade Federal Fluminense - UFF) – <em>Coetzee, a forma, o ficto, a versão, deslocamentos da subjetividade.</em>
+						Fundação Casa de Rui Barbosa - FCRB
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
-							<span>10:00</span><br>
-							MESA 1: O Brasil e os sujeitos deslocados.
+							<span>9:40</span><br>
+							Palestra de abertura <br>
+							João Almino <br>
 						</strong>
-						Coordenadora: Maria Alice Rezende de Carvalho (Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ).
+						Academia Brasileira de Letras<br>
+						Utopia<em> é ficção.</em>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>10:10</span><br>
+							Mesa 4: Entre os dois lados do Atlântico. <br>
+							Coordenador: Marcelo Jasmin <br>
+						</strong>
+						Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:05</span><br>
-							Chiara Vangelista
+							<span>10:15</span><br>
+							Christian Lynch <br>
 						</strong>
-						(Università degli Studi di Genova) – Políticas tribais, políticas imperiais.
-						Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Um conservadorismo caleidoscópico: a recepção da obra de Edmund Burke no Brasil (1812–1916).</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:25</span><br>
-							Ivana Stolze Lima
+							<span>10:35</span><br>
+							Ana Pessoa <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – Formas de registro e conhecimento de línguas africanas no Brasil.
+						Fundação Casa de Rui Barbosa - FCRB <br>
+						<em>De chácaras e palacetes: tradição e inovação nas formas de morar no Rio de Janeiro oitocentista.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:45</span><br>
-							Christiane Laidler
+							<span>10:55</span><br>
+							Isabel Lustosa <br>
 						</strong>
-						(Universidade do Estado do Rio de Janeiro - UERJ) – <em>"Reclamação": liberdade religiosa, direitos e
-						imigração em Rui Barbosa.</em>
+						Fundação Casa de Rui Barbosa - FCRB <br>
+						<em>Hipólito da Costa: as aparentes contradições de um jornalista brasileiro na alvorada do Século XIX</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:05</span><br>
-							Charles Gomes
+							<span>11:15</span><br>
+							Teresa Cerdeira <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>O Brasil diante de uma suposta crise migratória internacional.</em>
+						Universidade Federal do Rio de Janeiro - UFRJ <br>
+						<em>Levantado do chão e Terra  – a revolução no Alentejo e o movimento dos sem-terra no Brasil.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:25</span><br>
-							Maria Alice Rezende de Carvalho
+							<span>11:35</span><br>
+							Marcelo Jasmin - comentário
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:45</span><br>
+							<span>11:55</span><br>
 							Debate aberto ao público.
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
 							<span>12:30-13:45</span><br>
 							Intervalo para almoço.
@@ -359,39 +391,43 @@
 					<p class="sem-event-item">
 						<strong>
 							<span>14:00</span><br>
-							MESA 2: Identidades em questão.
+							Mesa 5 – Linguagem e circulação. <br>
+							Coordenador: José Carlos Azeredo <br>
 						</strong>
-						Coordenador: Hélio Guimarães (Universidade de São Paulo - USP).
+						Universidade do Estado do Rio de Janeiro – UERJ
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:05</span><br>
-							André Botelho
+							Lucia Velloso <br>
 						</strong>
-						(Universidade Federal do Rio de Janeiro - UFRJ) – <em>Mario de Andrade e o modernismo como movimento cultural.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Arquivos pessoais e os seus tipos documentais.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:25</span><br>
-							Marcos Veneu
+							Soraia Farias Reolon <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
+						Fundação Casa de Rui Barbosa - FCRB
+						<em>Referenciação: estratégias discursivo-referenciais e questões culturais.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:45</span><br>
-							Pedro Meira Monteiro
+							Lúcia Granja <br>
 						</strong>
-						(Princeton University) – <em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
+						Universidade Estadual Paulista – Unesp <br>
+						<em>Limites da atualidade nas crônicas de Machado de Assis.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>15:05</span><br>
-							Hélio Guimarães - comentário.
+							José Carlos Azeredo – comentários.
 						</strong>
 					</p>
 					<br>
@@ -402,159 +438,159 @@
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
-							<span>16:00-16:15</span><br>
+							<span>16:00-16:30</span><br>
 							Intervalo para café
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
-							<span>16:15</span><br>
-							MESA 3: Deslocamentos e identidades nos acervos.
+							<span>16:30</span><br>
+							Mesa 6 – Acervos e circulação. <br>
+							Coordenador: Marcelo Araújo <br>
 						</strong>
-						Coordenador: José Almino (Fundação Casa de Rui Barbosa - FCRB)
+						Instituto Brasileiro de Museus – Ibram
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:20</span><br>
-							Aquiles Brayner
+							<span>16:35</span><br>
+							Aparecida Rangel <br>
 						</strong>
-						(British Library) - <em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Casa, Museu e Personagem: a formação do Museu Casa de Rui Barbosa.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:40</span><br>
-							Regina Abreu
+							<span>16:55</span><br>
+							Thaís Scoralich de Carvalho <br>
 						</strong>
-						(Universidade Federal do Estado do Rio de Janeiro - UNIRIO) –
-						<em>Entre o ser e o estar: patrimonializando o imaterial e reclassificando as identidades.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Preservação do patrimônio histórico urbano e sustentabilidade.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>17:00</span><br>
-							Ana Maria de Almeida Camargo
+							<span>17:15</span><br>
+							Lena Vania Ribeiro Pinheiro <br>
 						</strong>
-						(Universidade de São Paulo - USP) –
-						<em>Políticas de constituição de acervos: os arquivos pessoais no espaço público.</em>
-					</p>
-					<br>
-					<p class="sem-event-item-right">
-						<strong>
-							<span>17:20</span><br>
-							José Almino - comentário.
-						</strong>
+						Instituto Brasileiro de Informação em Ciência e Tecnologia – IBICT <br>
+						<em>Repensando as "duas culturas" na ciência do mundo contemporâneo.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>17:35</span><br>
+							Marcelo Araújo – comentários.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:50</span><br>
 							Debate aberto ao público.
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>18:15-18:30</span><br>
-							Intervalo para café.
-						</strong>
-					</p>
-					<br>
-					<p class="sem-event-item">
-						<strong>
 							<span>18:30</span><br>
-							Conferência magna - Jacques Leenhardt
+							Concerto de piano. <br>
+							Maria Teresa Madeira <br>
 						</strong>
-						(École des Hautes Études en Sciences Sociales)  – <em>“O deslocamento como base do conhecimento democrático”.</em>
+						Repertório: Chiquinha Gonzaga, Ernesto Nazaré e Cristina Cardoso de Meneses.
 					</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 sem-event-text">
 					<p>
 						<strong><h3>11/8</h3></strong>
-						<strong>Eixo temático: Gestão e democracia</strong>
-					</p>
-					<br>
-					<p class="sem-event-item">
-						<strong>
-							<span>9:00</span><br>
-							Cerimônia de abertura
-							Marta de Senna
-						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB)
-						[Tempo reservado para eventual fala do Ministro ou seu representante]
+						<strong class="sem-event-text-caption"><span class="day3">Eixo temático: Gestão e democracia</span></strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
 							<span>9:30</span><br>
-							Palestra de abertura Lucia Helena
+							Avisos/Informes. <br>
+							Ronaldo LP Amaral <br>
 						</strong>
-						(Universidade Federal Fluminense - UFF) – <em>Coetzee, a forma, o ficto, a versão, deslocamentos da subjetividade.</em>
+						Fundação Casa de Rui Barbosa - FCRB
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
-							<span>10:00</span><br>
-							MESA 1: O Brasil e os sujeitos deslocados.
+							<span>9:40</span><br>
+							Palestra de abertura <br>
+							Frederico Lustosa <br>
 						</strong>
-						Coordenadora: Maria Alice Rezende de Carvalho (Pontifícia Universidade Católica do Rio de Janeiro – PUC-RJ).
+						Universidade Federal Fluminense – UFF <br>
+						<em>Gestão pública e democracia na cultura.</em>
+					</p>
+					<br>
+					<p class="sem-event-item">
+						<strong>
+							<span>10:10</span><br>
+							Mesa 7 – O Estado: organização e políticas. <br>
+							Coordenador: Adam Muniz <br>
+						</strong>
+						Departamento de Promoção Internacional – DEINT/MinC
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:05</span><br>
-							Chiara Vangelista
+							<span>10:15</span><br>
+							Lia Calabre <br>
 						</strong>
-						(Università degli Studi di Genova) – Políticas tribais, políticas imperiais.
-						Deslocamentos indígenas no Centro-Oeste do Brasil, século XVIII.
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Cultura e territorialidades: políticas culturais, territórios e identidades.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:25</span><br>
-							Ivana Stolze Lima
+							<span>10:35</span><br>
+							Ana Malin <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – Formas de registro e conhecimento de línguas africanas no Brasil.
+						Instituto Brasileiro de Informação em Ciência e Tecnologia – IBICT <br>
+						<em>Informação e governança pública: desafios e tensões atuais.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>10:45</span><br>
-							Christiane Laidler
+							<span>10:55</span><br>
+							José Antonio da Silva <br>
 						</strong>
-						(Universidade do Estado do Rio de Janeiro - UERJ) – <em>"Reclamação": liberdade religiosa, direitos e
-						imigração em Rui Barbosa.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>As reformas da administração pública e seu impacto na cultura das organizações do Estado.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:05</span><br>
-							Charles Gomes
+							<span>11:15</span><br>
+							Marcelo Viana <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>O Brasil diante de uma suposta crise migratória internacional.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Políticas culturais e gestão: cidadania cultural, federação e participação.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:25</span><br>
-							Maria Alice Rezende de Carvalho
+							<span>11:35</span><br>
+							Adam Muniz - comentários.
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>11:45</span><br>
+							<span>11:55</span><br>
 							Debate aberto ao público.
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
-							<span>12:30-13:45</span><br>
+							<span>12:30-14:00</span><br>
 							Intervalo para almoço.
 						</strong>
 					</p>
@@ -562,39 +598,43 @@
 					<p class="sem-event-item">
 						<strong>
 							<span>14:00</span><br>
-							MESA 2: Identidades em questão.
+							Mesa 8 – O Estado e a promoção da memória coletiva. <br>
+							Coordenadora: Helena Severo <br>
 						</strong>
-						Coordenador: Hélio Guimarães (Universidade de São Paulo - USP).
+						Fundação Biblioteca Nacional – FBN
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:05</span><br>
-							André Botelho
+							Ana Ligia Medeiros <br>
 						</strong>
-						(Universidade Federal do Rio de Janeiro - UFRJ) – <em>Mario de Andrade e o modernismo como movimento cultural.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Circulação do conhecimento na sociedade brasileira: formação e prática das instituições de memória.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:25</span><br>
-							Marcos Veneu
+							Dilza Bastos <br>
 						</strong>
-						(Fundação Casa de Rui Barbosa - FCRB) – <em>A tradição e seus pares: figuras de continuidade num tempo de diferenças.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>A comunicação científica e a gestão do conhecimento. </em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>14:45</span><br>
-							Pedro Meira Monteiro
+							Rosangela Rangel <br>
 						</strong>
-						(Princeton University) – <em>Um mestre na periferia da ordem: Machado de Assis e a solércia da lei.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Acesso e sigilo nos arquivos pessoais. </em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>15:05</span><br>
-							Hélio Guimarães - comentário.
+							Helena Severo - comentário.
 						</strong>
 					</p>
 					<br>
@@ -605,74 +645,71 @@
 						</strong>
 					</p>
 					<br>
-					<p class="sem-event-item-right">
+					<p class="sem-event-item-center">
 						<strong>
-							<span>16:00-16:15</span><br>
+							<span>16:00-16:30</span><br>
 							Intervalo para café
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item">
 						<strong>
-							<span>16:15</span><br>
-							MESA 3: Deslocamentos e identidades nos acervos.
+							<span>16:30</span><br>
+							Mesa 9: O Estado: instituições de acervos e memória. <br>
+							Coordenadora: Lia Motta <br>
 						</strong>
-						Coordenador: José Almino (Fundação Casa de Rui Barbosa - FCRB)
+						Instituto do Patrimônio Histórico Nacional - IPHAN.
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:20</span><br>
-							Aquiles Brayner
+							<span>16:35</span><br>
+							Adriana Seixas Magalhães <br>
 						</strong>
-						(British Library) - <em>Novos modelos de criação e disseminação de conteúdos eletrônicos no acervo BN Digital.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Gestão do conhecimento e compartilhamento: reflexões.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>16:40</span><br>
-							Regina Abreu
+							<span>16:55</span><br>
+							Cláudia Carvalho <br>
 						</strong>
-						(Universidade Federal do Estado do Rio de Janeiro - UNIRIO) –
-						<em>Entre o ser e o estar: patrimonializando o imaterial e reclassificando as identidades.</em>
+						Fundação Casa de Rui Barbosa – FCRB <br>
+						<em>Preservação integrada: edifícios que abrigam coleções.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>17:00</span><br>
-							Ana Maria de Almeida Camargo
+							<span>17:15</span><br>
+							Paulo Knauss <br>
 						</strong>
-						(Universidade de São Paulo - USP) –
-						<em>Políticas de constituição de acervos: os arquivos pessoais no espaço público.</em>
-					</p>
-					<br>
-					<p class="sem-event-item-right">
-						<strong>
-							<span>17:20</span><br>
-							José Almino - comentário.
-						</strong>
+						Museu Histórico Nacional – MHN <br>
+						<em>Políticas de formação de acervos: práticas de colecionar entre o privado e o público.</em>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
 							<span>17:35</span><br>
+							Lia Motta - comentário.
+						</strong>
+					</p>
+					<br>
+					<p class="sem-event-item-right">
+						<strong>
+							<span>17:50</span><br>
 							Debate aberto ao público.
 						</strong>
 					</p>
 					<br>
 					<p class="sem-event-item-right">
 						<strong>
-							<span>18:15-18:30</span><br>
-							Intervalo para café.
-						</strong>
-					</p>
-					<br>
-					<p class="sem-event-item">
-						<strong>
 							<span>18:30</span><br>
-							Conferência magna - Jacques Leenhardt
+							Conferência de encerramento <br>
+							Alberto Manguel <br>
 						</strong>
-						(École des Hautes Études en Sciences Sociales)  – <em>“O deslocamento como base do conhecimento democrático”.</em>
+						Biblioteca Nacional da Argentina.<br>
+						<em>La democracia como obra de ficción. </em>
 					</p>
 				</div>
 			</div>
@@ -680,35 +717,40 @@
 			<div class="row sem-util">
 				<div class="col-md-12 col-sm-12 col-xs-12" id="util">
 					<h2 class="sem-caption"><strong>Informações úteis</strong></h2>
-					<p class="sem-text">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-						Lorem ipsum dolor
-					</p>
 				</div>
 			</div>
 			<div class="row sem-util sem-util-map">
-				<div class="col-md-12 text-center">
-					<iframe src="https://www.google.com/maps/d/embed?mid=16_yFBK_GwB0FTsAwuoCU7B_tc64"></iframe>
+				<div class="col-md-5 col-md-offset-1">
+					<p class="sem-text">
+						Por meio da navegação no mapa podem ser encontradas informações sobre a localização da
+						Fundação Casa de Rui Barbosa, formas de chegar ao seminário, principais restaurantes e serviços nas
+						imediações da Fundação.
+					</p>
+				</div>
+				<div class="col-md-5 text-center">
+					<iframe src="https://www.google.com/maps/d/embed?mid=16_yFBK_GwB0FTsAwuoCU7B_tc64&hl=pt-PT"></iframe>
 				</div>
 			</div>
+
 			<div class="row sem-footer" id="footer">
 				<div class="col-md-2 col-md-offset-1 col-sm-11 col-sm-offset-1">
 					<strong>
 					R. São Clemente, 134 - Botafogo <br>
 					Rio de Janeiro - RJ, 22260-000 <br>
 					<a href="http://www.casaruibarbosa.gov.br">www.casaruibarbosa.gov.br</a><br>
-					endereço@email.com <br>
-					(21) 2389-4600
+					contato.seminario@rb.gov.br<br>
+					(21) 3289-4657 / (21) 3289-4601
 					</strong>
 				</div>
-				<div class="col-md-3 col-md-offset-1 sem-logo">
+
+				<div class="col-md-3 col-md-offset-2 sem-logo">
 					<img src="img/logo_fcrb.png" alt="Fundação Casa de Rui Barbosa">
 				</div>
 				<div class="col-md-3 sem-logo">
 					<img src="img/logo_minc.png" alt="Ministério da Cultura">
 				</div>
 			</div>
+
 			<div class="row sem-credits">
 				<span>Seminário Internacional Cultura, Ciência e Democracia | &copy; Todos os direitos reservados | design: Celeste Matos | desenvolvimento: Carlos A. A. Barreto</span>
 			</div>

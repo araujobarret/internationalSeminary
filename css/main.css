@@ -12,6 +12,7 @@ sem-body {
     color: #fff;
     margin-bottom: 0px;
     border-radius: 0px;
+    text-align: center;
     border: none;
     position: fixed;
     top: 0;
@@ -39,7 +40,7 @@ sem-body {
     font-size: 1em;
 }
 
-.sem-menu-col a{
+.sem-header a{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -56,38 +57,77 @@ sem-body {
 }
 
 .sem-social {
+    padding-left: 1%;
+    padding-right: 0px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 0.8em;
 }
 
-.sem-social .contrast:hover {
-    cursor: pointer;
+.sem-idioma {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.sem-social .font-size:hover {
-    cursor: pointer;
-}
-
-.sem-social span span:first-of-type {
-    font-size: 1.4em;
-}
-
-.sem-social img{
+.sem-social img, .sem-idioma img{
     margin-left: 5px;
     max-height: 30px;
- }
+}
 
-.sem-social .acessibility {
-    margin-left: -30px;
+.sem-access {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    justify-content: flex-start;
+    white-space: nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.8em;
+}
+
+.sem-font span {
+    margin-top: -4px;
+}
+
+.sem-access .contrast:hover {
+    cursor: pointer;
+}
+
+.sem-access .font-size:hover {
+    cursor: pointer;
+}
+
+.sem-access span span:first-of-type {
+    font-size: 1.3em;
+}
+
+.sem-access .acessibility {
+    /*margin-left: -30px;*/
+    /*padding-right: 20px;*/
     max-height: 20px;
+}
+
+.sem-idioma img:hover {
+    cursor: pointer;
 }
 
 .sem-banner {
     border-top: solid 4px #f7ae42;
     background-color: #f7ae42;
-    /*padding-top: 4px;*/
     width: 100%;
 }
 
@@ -139,12 +179,17 @@ sem-body {
     color: #f68e00;
 }
 
-.sem-event .sem-event-item strong span, .sem-event .sem-event-item-right strong span {
+.sem-event .sem-event-item strong span, .sem-event .sem-event-item-right strong span, .sem-event .sem-event-item-center strong span {
     font-size: 1.2em;
 }
 
 .sem-event .sem-event-item-right {
     text-align: right;
+    line-height: 150%;
+}
+
+.sem-event .sem-event-item-center {
+    text-align: center;
     line-height: 150%;
 }
 
@@ -154,25 +199,24 @@ sem-body {
     padding-left: 8%;
     padding-right: 8%;
     line-height: 200%;
+    text-align: justify;
     background-color: #703a0f;
     color: #fcf6d2;
 }
 
-.sem-util h2{
-    margin-bottom: 3%;
-}
-
 .sem-util-map {
     padding: 0;
+    padding-bottom: 3%;
 }
 
 .sem-util-map iframe {
     margin-bottom: 3%;
-    width: 40%;
-    height: 400px;
+    width: 100%;
+    height: 300px;
 }
 
 .sem-footer {
+    display: flex;
     padding-top: 3%;
     padding-bottom: 2%;
     line-height: 200%;
