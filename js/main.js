@@ -14,15 +14,18 @@ $(document).ready(function(){
 
     $('#pt').on('click', function(){
         if(language){
-            if(contrast)
+            if(contrast) {
                 $('#logo').attr('src', 'img/logo_contrast.png');
-            else
+                $('#logo_mini').attr('src', 'img/logo_mini.png');
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
+                $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
+            }
+            else {
                 $('#logo').attr('src', 'img/logo.jpg');
-
-            if(contrast)
                 $('#logo_mini').attr('src', 'img/logo_mini.png');
-            else
-                $('#logo_mini').attr('src', 'img/logo_mini.png');
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb.png');
+                $('#logo_minc').attr('src', 'img/logo_minc.png');
+            }
 
             $('#link-inicio').text('Início');
             $('#link-sobre').text('Sobre');
@@ -61,22 +64,24 @@ $(document).ready(function(){
                 imediações da Fundação.
             `);
 
-
             language = false;
         }
     });
 
     $('#en').on('click', function(){
         if(!language){
-            if(contrast)
+            if(contrast){
                 $('#logo').attr('src', 'img/logo_contrast_en.png');
-            else
-                $('#logo').attr('src', 'img/logo_en.png');
-
-            if(contrast)
                 $('#logo_mini').attr('src', 'img/logo_mini_contrast_en.png');
-            else
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
+                $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
+            }
+            else {
+                $('#logo').attr('src', 'img/logo_en.png');
                 $('#logo_mini').attr('src', 'img/logo_mini_en.png');
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb.png');
+                $('#logo_minc').attr('src', 'img/logo_minc.png');
+            }
 
             $('#link-inicio').text('Home');
             $('#link-sobre').text('About');
@@ -125,6 +130,8 @@ $(document).ready(function(){
            $('#twitter').attr('src', 'img/twitter_contrast.png');
            $('#instagram').attr('src', 'img/instagram_contrast.png');
            $('#youtube').attr('src', 'img/youtube_contrast.png');
+           $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
+           $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
            if(language)
                $('#logo').attr('src', 'img/logo_contrast_en.png');
            else
@@ -132,7 +139,7 @@ $(document).ready(function(){
            if(language)
                $('#logo_mini').attr('src', 'img/logo_mini_contrast_en.png');
            else
-               $('#logo_mini').attr('src', 'img/logo_mini_contrast.png');
+               $('#logo_mini').attr('src', 'img/logo_mini.png');
            contrast = true;
        }
        else{
@@ -141,6 +148,8 @@ $(document).ready(function(){
            $('#twitter').attr('src', 'img/twitter.png');
            $('#instagram').attr('src', 'img/instagram.png');
            $('#youtube').attr('src', 'img/youtube.png');
+           $('#logo_fcrb').attr('src', 'img/logo_fcrb.png');
+           $('#logo_minc').attr('src', 'img/logo_minc.png');
            if(language)
                $('#logo').attr('src', 'img/logo_en.png');
            else

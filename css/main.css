@@ -20,9 +20,15 @@ sem-body {
     z-index: 9999;
 }
 
+.navbar-header{
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 70px;
+}
+
 .sem-header img{
     max-height: 70px;
-    margin-left: 60px;
+    padding: 0;
 }
 
 .row-eq-height {
@@ -171,6 +177,10 @@ sem-body {
     padding-bottom: 2%;
 }
 
+.sem-event .sem-text a {
+    color: #703a0f;
+}
+
 .sem-event .sem-event-item {
     line-height: 150%;
 }
@@ -243,4 +253,5 @@ sem-body {
     color: #fcf6d2;
     padding-top: 1%;
     padding-bottom: 1%;
+    font-size: 0.8em;
 }
