@@ -168,6 +168,19 @@ sem-body {
     color: #fff;
 }
 
+#ebook {
+    color: #703a0f;
+    font-weight: 500;
+}
+
+#ebook:hover{
+    cursos: pointer;
+}
+
+.sem-idioma img:hover {
+    cursor: pointer;
+}
+
 .sem-event .sem-caption {
     color: #fb860f;
     font-weight: bold;

@@ -122,8 +122,6 @@ sem-body {
 }
 
 .sem-access .acessibility {
-    /*margin-left: -30px;*/
-    /*padding-right: 20px;*/
     max-height: 20px;
 }
 
@@ -165,6 +163,15 @@ sem-body {
     line-height: 200%;
     background-color: #fcf6d2;
     color: #703a0f;
+}
+
+#ebook {
+    color: #703a0f;
+    font-weight: 500;
+}
+
+#ebook:hover{
+    cursos: pointer;
 }
 
 .sem-event .sem-caption {

@@ -17,8 +17,8 @@ $(document).ready(function(){
             if(contrast) {
                 $('#logo').attr('src', 'img/logo_contrast.png');
                 $('#logo_mini').attr('src', 'img/logo_mini.png');
-                $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
-                $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb_contrast.png');
+                $('#logo_minc').attr('src', 'img/logo_minc_contrast.png');
             }
             else {
                 $('#logo').attr('src', 'img/logo.jpg');
@@ -53,6 +53,7 @@ $(document).ready(function(){
                 e consagração das ideias. Por fim, há o eixo “Gestão e democracia”, que se volta para políticas culturais,
                 administração pública, gestão de instituições culturais, preservação e informação.
             `);
+            $('#ebook').find('em').text('Acesse aqui o livro eletrônico com os resumos das comunicações.');
             $('.day1').text('Eixo temático: Cultura, deslocamentos, identidades.');
             $('.day2').text('Eixo temático: Ideias em circulação.');
             $('.day3').text('Eixo temático: Cultura, deslocamentos, identidades.');
@@ -73,8 +74,8 @@ $(document).ready(function(){
             if(contrast){
                 $('#logo').attr('src', 'img/logo_contrast_en.png');
                 $('#logo_mini').attr('src', 'img/logo_mini_contrast_en.png');
-                $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
-                $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
+                $('#logo_fcrb').attr('src', 'img/logo_fcrb_contrast.png');
+                $('#logo_minc').attr('src', 'img/logo_minc_contrast.png');
             }
             else {
                 $('#logo').attr('src', 'img/logo_en.png');
@@ -109,6 +110,7 @@ $(document).ready(function(){
                 and consecration of ideas. Part Three, entitled "Management and Democracy," focuses on cultural policies, public 
                 administration, management of cultural institutions, preservation and information.
             `);
+            $('#ebook').find('em').text('Acess here the ebook which contains the summary of the program.');
             $('.day1').text('Part 1: Culture, Displacement, Identities');
             $('.day2').text('Part 2: Ideas in Movement');
             $('.day3').text('Part 3: Management and Democracy');
@@ -130,8 +132,8 @@ $(document).ready(function(){
            $('#twitter').attr('src', 'img/twitter_contrast.png');
            $('#instagram').attr('src', 'img/instagram_contrast.png');
            $('#youtube').attr('src', 'img/youtube_contrast.png');
-           $('#logo_fcrb').attr('src', 'img/logo_fcrb_constrast.png');
-           $('#logo_minc').attr('src', 'img/logo_minc_constrast.png');
+           $('#logo_fcrb').attr('src', 'img/logo_fcrb_contrast.png');
+           $('#logo_minc').attr('src', 'img/logo_minc_contrast.png');
            if(language)
                $('#logo').attr('src', 'img/logo_contrast_en.png');
            else
